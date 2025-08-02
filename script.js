@@ -16,9 +16,11 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
 window.addEventListener('scroll', () => {
     const nav = document.querySelector('nav');
     if (window.scrollY > 100) {
-        nav.style.background = 'rgba(10, 10, 10, 0.98)';
+        nav.style.background = 'rgba(15, 23, 42, 0.98)';
+        nav.style.borderBottom = '1px solid rgba(71, 85, 105, 0.8)';
     } else {
-        nav.style.background = 'rgba(10, 10, 10, 0.95)';
+        nav.style.background = 'rgba(15, 23, 42, 0.95)';
+        nav.style.borderBottom = '1px solid var(--border-color)';
     }
 });
 
@@ -145,6 +147,7 @@ const mobileMenuStyles = `
             align-items: center;
             padding-top: 2rem;
             transition: right 0.3s ease;
+            border-left: 2px solid var(--border-color);
         }
         
         .nav-links.mobile-active {
@@ -221,9 +224,11 @@ function throttle(func, limit) {
 const throttledScrollHandler = throttle(() => {
     const nav = document.querySelector('nav');
     if (window.scrollY > 100) {
-        nav.style.background = 'rgba(10, 10, 10, 0.98)';
+        nav.style.background = 'rgba(15, 23, 42, 0.98)';
+        nav.style.borderBottom = '1px solid rgba(71, 85, 105, 0.8)';
     } else {
-        nav.style.background = 'rgba(10, 10, 10, 0.95)';
+        nav.style.background = 'rgba(15, 23, 42, 0.95)';
+        nav.style.borderBottom = '1px solid var(--border-color)';
     }
     
     // Parallax effect for particles
