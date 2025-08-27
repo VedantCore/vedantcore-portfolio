@@ -6,158 +6,171 @@
     <title>Vedant Sarva - Student @MIT-ADT</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <div class="bg-gradient"></div>
+    
     <!-- Navigation -->
-    <nav>
+    <nav class="nav" id="nav">
         <div class="nav-container">
             <div class="logo">VS</div>
             <ul class="nav-links">
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
+            <button class="mobile-menu-btn">☰</button>
         </div>
     </nav>
 
     <!-- Hero Section -->
     <section id="home" class="hero">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        
-        <div class="hero-content">
-            <h1>Vedant Sarva</h1>
+        <div class="hero-content fade-in">
+            <div class="hero-badge">
+                <div class="status-dot"></div>
+                Open to opportunities
+            </div>
+            <h1 class="hero-title">Vedant Sarva</h1>
             <p class="hero-subtitle">Student @MIT-ADT University</p>
             <p class="hero-description">
-                Hi, I'm Vedant Sarva, a student at MIT Art, Design, & Technology University.
-                I love exploring new technologies and creating projects that make a difference.
+                Passionate developer exploring cutting-edge technologies and building 
+                innovative solutions that make a meaningful impact. Currently focused on 
+                full-stack development and modern web technologies.
             </p>
-            <a href="#projects" class="cta-button">View My Work</a>
-        </div>
-        
-        <div class="scroll-indicator">
-            <div>↓</div>
+            <div class="hero-buttons">
+                <a href="#projects" class="btn btn-primary">View Projects</a>
+                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+            </div>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about">
-        <div class="section-container">
+    <section id="about" class="section about">
+        <div class="section-header fade-in">
             <h2 class="section-title">About Me</h2>
-            <div class="about-content">
-                <div class="about-text">
-                    <p>
-                        I'm a passionate developer with a keen interest in web technologies and software engineering. 
-                        My journey in tech began with a fascination for how things work, leading me to explore various 
-                        programming languages and frameworks, and I've been hooked ever since.
-                    </p>
-                    <p>
-                        I'm currently focused on expanding my skills in both frontend and backend development.
-                        My goal is to master full-stack technologies and build impactful, scalable applications.
-                    </p>
-                    <p>
-                        When I'm not coding, you can find me exploring new technologies, contributing to open-source 
-                        projects, or sharing knowledge with the developer community.
-                    </p>
-                </div>
+            <p class="section-subtitle">
+                Driven by curiosity and fueled by coffee, I transform ideas into digital experiences
+            </p>
+        </div>
+        <div class="about-grid">
+            <div class="about-text fade-in">
+                <p>
+                    I'm a passionate developer with a keen interest in web technologies and software engineering. 
+                    My journey in tech began with a fascination for how things work, leading me to explore various 
+                    programming languages and frameworks.
+                </p>
+                <p>
+                    Currently pursuing my studies at MIT Art, Design, & Technology University, I'm focused on 
+                    expanding my skills in both frontend and backend development. My goal is to master full-stack 
+                    technologies and build impactful, scalable applications.
+                </p>
+                <p>
+                    When I'm not coding, you can find me exploring new technologies, contributing to open-source 
+                    projects, or sharing knowledge with the developer community.
+                </p>
+            </div>
+            <div class="skills-section fade-in">
+                <h3>Technologies & Tools</h3>
                 <div class="skills-grid">
-                    <div class="skill-item">HTML</div>
-                    <div class="skill-item">CSS</div>
-                    <div class="skill-item">Python</div>
-                    <div class="skill-item">Java</div>
-                    <div class="skill-item">JavaScript</div>
-                    <div class="skill-item">Git</div>
-                    <div class="skill-item">GitHub</div>
-                    <div class="skill-item">MongoDB</div>
+                    <div class="skill-tag floating">HTML5</div>
+                    <div class="skill-tag floating">CSS3</div>
+                    <div class="skill-tag floating">JavaScript</div>
+                    <div class="skill-tag floating">Python</div>
+                    <div class="skill-tag floating">Java</div>
+                    <div class="skill-tag floating">MongoDB</div>
+                    <div class="skill-tag floating">Git</div>
+                    <div class="skill-tag floating">GitHub</div>
                 </div>
             </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects">
-        <div class="section-container">
+    <section id="projects" class="section projects">
+        <div class="section-header fade-in">
             <h2 class="section-title">Featured Projects</h2>
-            <div class="projects-grid">
-                <div class="project-card">
+            <p class="section-subtitle">
+                A showcase of my recent work and creative endeavors
+            </p>
+        </div>
+        <div class="projects-grid">
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <div class="project-icon">PF</div>
                     <h3 class="project-title">Persona Fest 2025</h3>
-                    <p class="project-description">
-                        A fully-featured college festival management and registration platform.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">HTML</span>
-                        <span class="tech-tag">CSS</span>
-                        <span class="tech-tag">JavaScript</span>
-                        <span class="tech-tag">MongoDB</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://mitadtu-personafest-2025.vercel.app/" class="project-link">Live Demo</a>
-                        <a href="https://github.com/VedantCore/persona-fest-demo" class="project-link">GitHub</a>
-                    </div>
                 </div>
-
-                <div class="project-card">
-                    <h3 class="project-title">Snakey</h3>
-                    <p class="project-description">
-                        Snakey is a sleek Java remake of the iconic Snake game from classic BlackBerry devices.
-                        Eat, grow, and weave through tight corners in a fast-paced, retro gaming experience!
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Java</span>
-                        <span class="tech-tag">Git</span>
-                        <span class="tech-tag">GitHub</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="https://github.com/VedantCore/Snakey" class="project-link">GitHub</a>
-                        <a href="https://github.com/VedantCore/Snakey/blob/main/README.md" class="project-link">README.md</a>
-                    </div>
+                <p class="project-description">
+                    A comprehensive college festival management and registration platform featuring 
+                    event registration, participant tracking, and administrative tools for seamless 
+                    festival organization.
+                </p>
+                <div class="project-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">MongoDB</span>
                 </div>
-<!--
-                <div class="project-card">
-                    <h3 class="project-title">AI-Powered Analytics</h3>
-                    <p class="project-description">
-                        A machine learning dashboard that provides intelligent insights and 
-                        predictive analytics for business data visualization.
-                    </p>
-                    <div class="project-tech">
-                        <span class="tech-tag">Python</span>
-                        <span class="tech-tag">Flask</span>
-                        <span class="tech-tag">TensorFlow</span>
-                        <span class="tech-tag">D3.js</span>
-                    </div>
-                    <div class="project-links">
-                        <a href="#" class="project-link">Live Demo</a>
-                        <a href="#" class="project-link">GitHub</a>
-                    </div>
+                <div class="project-links">
+                    <a href="https://mitadtu-personafest-2025.vercel.app/" class="project-link">Live Demo</a>
+                    <a href="https://github.com/VedantCore/persona-fest-demo" class="project-link">GitHub</a>
                 </div>
             </div>
-        </div> -->
-    </section>
 
-    <!-- Contact Section -->
-    <section id="contact" class="contact">
-        <div class="section-container">
-            <h2 class="section-title">Let's Connect</h2>
-            <div class="contact-content">
-                <p class="contact-text">
-                    I'm always open to discussing new opportunities, interesting projects, 
-                    or just having a conversation about technology and development.
+            <div class="project-card fade-in">
+                <div class="project-header">
+                    <div class="project-icon">🐍</div>
+                    <h3 class="project-title">Snakey</h3>
+                </div>
+                <p class="project-description">
+                    A modern Java remake of the iconic Snake game from classic BlackBerry devices. 
+                    Features smooth gameplay, score tracking, and nostalgic retro aesthetics with 
+                    contemporary performance optimizations.
                 </p>
-                <a href="mailto:work.vedantcore@gmail.com" class="cta-button">Get In Touch</a>
-                <div class="social-links">
-                    <a href="https://github.com/VedantCore" class="social-link">GitHub</a>
-                    <a href="https://www.linkedin.com/in/vedantcore" class="social-link">LinkedIn</a>
+                <div class="project-tech">
+                    <span class="tech-tag">Java</span>
+                    <span class="tech-tag">Swing</span>
+                    <span class="tech-tag">Git</span>
+                    <span class="tech-tag">GitHub</span>
+                </div>
+                <div class="project-links">
+                    <a href="https://github.com/VedantCore/Snakey" class="project-link">GitHub</a>
+                    <a href="https://github.com/VedantCore/Snakey/blob/main/README.md" class="project-link">Documentation</a>
                 </div>
             </div>
         </div>
     </section>
 
+    <!-- Contact Section -->
+    <section id="contact" class="section contact">
+        <div class="section-header fade-in">
+            <h2 class="section-title">Let's Connect</h2>
+            <p class="section-subtitle">
+                Ready to collaborate or discuss exciting opportunities
+            </p>
+        </div>
+        <div class="contact-content fade-in">
+            <p class="contact-text">
+                I'm always open to discussing new opportunities, interesting projects, 
+                or just having a conversation about technology and development. 
+                Let's build something amazing together!
+            </p>
+            <a href="mailto:work.vedantcore@gmail.com" class="btn btn-primary">Get In Touch</a>
+            <div class="social-links">
+                <a href="https://github.com/VedantCore" class="social-link">
+                    <span>GitHub</span>
+                </a>
+                <a href="https://www.linkedin.com/in/vedantcore" class="social-link">
+                    <span>LinkedIn</span>
+                </a>
+            </div>
+        </div>
+    </section>
+
     <!-- Footer -->
-    <footer>
+    <footer class="footer">
         <p>&copy; 2025 Vedant Sarva. Crafted with passion and modern web technologies.</p>
     </footer>
 
