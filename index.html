@@ -1,228 +1,300 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Vedant Sarva - Student @MIT-ADT</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vedant Sarva — Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
-    <div class="bg-gradient"></div>
-    
-    <!-- Navigation -->
-    <nav class="nav" id="nav">
-        <div class="nav-container">
-            <div class="logo">VS</div>
-            <ul class="nav-links">
-                <li><a href="#home" class="nav-link">Home</a></li>
-                <li><a href="#about" class="nav-link">About</a></li>
-                <li><a href="#projects" class="nav-link">Projects</a></li>
-                <li><a href="#contact" class="nav-link">Contact</a></li>
-            </ul>
-            <button class="mobile-menu-btn">☰</button>
+
+  <header class="site-nav" id="siteNav">
+    <div class="nav-inner">
+      <span class="nav-logo">Strixxy</span>
+      <nav class="nav-links" role="navigation" aria-label="Primary">
+        <a href="#home"     class="nav-link" data-section="home">Home</a>
+        <a href="#about"    class="nav-link" data-section="about">About</a>
+        <a href="#projects" class="nav-link" data-section="projects">Projects</a>
+        <a href="#contact"  class="nav-link" data-section="contact">Contact</a>
+        <a href="VedantSarva-Resume2026.pdf" class="nav-link" target="_blank" rel="noopener">Resume ↗</a>
+      </nav>
+      <button class="nav-mobile-btn" aria-label="Menu" aria-expanded="false">MENU</button>
+    </div>
+    <div class="nav-drawer" id="navDrawer" aria-hidden="true">
+      <a href="#home"     class="drawer-link">Home</a>
+      <a href="#about"    class="drawer-link">About</a>
+      <a href="#projects" class="drawer-link">Projects</a>
+      <a href="#contact"  class="drawer-link">Contact</a>
+      <a href="VedantSarva-Resume2026.pdf" class="drawer-link" target="_blank" rel="noopener">Resume ↗</a>
+    </div>
+  </header>
+
+  <section id="home" class="hero">
+    <div class="hero-inner">
+
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        <span>Powered by late nights, video games, too much coffee, and just enough alcohol.</span>
+      </div>
+
+      <h1 class="hero-title" aria-label="Vedant Sarva">
+        <span class="title-line title-line--name" id="heroName">VEDANT</span>
+        <span class="title-line title-line--surname">SARVA</span>
+      </h1>
+
+      <div class="hero-meta">
+        <p class="hero-role">Student @MIT-ADT University · Specialization in Cloud Computing</p>
+        <p class="hero-desc">
+          Building scalable systems and sharp interfaces.<br/>
+          Aiming for DevOps, DevSecOps, and FAANG.
+        </p>
+      </div>
+
+      <div class="hero-cta">
+        <a href="#projects" class="btn btn-primary">See my work</a>
+        <a href="#contact"  class="btn btn-ghost">Get in touch</a>
+      </div>
+
+      <div class="hero-statusbar">
+        <span class="status-item"><span class="status-bullet status-bullet--green"></span>Available</span>
+        <span class="status-divider">/</span>
+        <span class="status-item">B.Tech Sem IV</span>
+        <span class="status-divider">/</span>
+        <span class="status-item">MIT-ADT University</span>
+        <span class="status-divider">/</span>
+        <span class="status-item" id="liveClock">--:--:--</span>
+      </div>
+    </div>
+
+    <div class="hero-counter" aria-hidden="true">
+      <span class="counter-num" id="projectCount">20+</span>
+      <span class="counter-label">PROJECTS<br/>SHIPPED</span>
+    </div>
+  </section>
+
+  <section id="about" class="about reveal">
+    <div class="section-label" aria-hidden="true">§ ABOUT</div>
+
+    <div class="about-grid">
+      <div class="about-copy">
+        <h2 class="section-heading">Who<br/>I am.</h2>
+        <p>
+          Passionate developer at MIT Art, Design &amp; Technology University,
+          specialising in Cloud Computing. I build full-stack products — from
+          React frontends to serverless backends — and I'm working toward roles
+          in DevOps and DevSecOps at product companies that move fast.
+        </p>
+        <p>
+          When I'm not shipping, I'm studying systems design, AWS architecture,
+          and contributing to open-source. I hold a minor in Psychology — turns
+          out understanding humans helps you build better software.
+        </p>
+        <div class="about-badges">
+          <span class="badge">Specialization in Cloud Computing</span>
+          <span class="badge">MERN Stack</span>
+          <span class="badge">Learning DevOps</span>
+          <span class="badge">AWS Certified Cloud Practitioner</span>
+          <span class="badge">Minor in Psychology</span>
         </div>
-    </nav>
+      </div>
 
-    <!-- Hero Section -->
-    <section id="home" class="hero">
-        <div class="hero-content fade-in">
-            <div class="hero-badge">
-                <div class="status-dot"></div>
-                Open to opportunities
-            </div>
-            <h1 class="hero-title">Vedant Sarva</h1>
-            <p class="hero-subtitle">Student @MIT-ADT University</p>
-            <p class="hero-description">
-                Passionate developer exploring cutting-edge technologies and building 
-                innovative solutions that make a meaningful impact. Currently focused on 
-                full-stack development and modern web technologies.
-            </p>
-            <div class="hero-buttons">
-                <a href="#projects" class="btn btn-primary">View Projects</a>
-                <a href="#contact" class="btn btn-secondary">Get In Touch</a>
-            </div>
+      <div class="about-skills">
+        <div class="skills-header">
+          <span class="skills-label">STACK</span>
         </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about" class="section about">
-        <div class="section-header fade-in">
-            <h2 class="section-title">About Me</h2>
-            <p class="section-subtitle">
-                Driven by curiosity and fueled by coffee, I transform ideas into digital experiences
-            </p>
+        <div class="skills-list">
+          <div class="skill-row">
+            <span class="skill-name">HTML / CSS</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:95%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">JavaScript</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:90%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">React / Next.js</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:88%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">TypeScript</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:80%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Tailwind CSS</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:85%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Supabase / Firebase</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:78%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Python</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:75%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">AWS / Cloud</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:65%"></div></div>
+          </div>
+          <div class="skill-row">
+            <span class="skill-name">Git / GitHub</span>
+            <div class="skill-bar"><div class="skill-fill" style="--w:92%"></div></div>
+          </div>
         </div>
-        <div class="about-grid">
-            <div class="about-text fade-in">
-                <p>
-                    I'm a passionate developer with a keen interest in web technologies and software engineering. 
-                    My journey in tech began with a fascination for how things work, leading me to explore various 
-                    programming languages and frameworks.
-                </p>
-                <p>
-                    Currently pursuing my studies at MIT Art, Design, & Technology University, I'm focused on 
-                    expanding my skills in both frontend and backend development. My goal is to master full-stack 
-                    technologies and build impactful, scalable applications.
-                </p>
-                <p>
-                    When I'm not coding, you can find me exploring new technologies, contributing to open-source 
-                    projects, or sharing knowledge with the developer community.
-                </p>
-            </div>
-            <div class="skills-section fade-in">
-                <h3>Technologies & Tools</h3>
-                <div class="skills-grid">
-                    <div class="skill-tag floating">HTML</div>
-                    <div class="skill-tag floating">CSS</div>
-                    <div class="skill-tag floating">JavaScript</div>
-                    <div class="skill-tag floating">REACT.js</div>
-                    <div class="skill-tag floating">Next.js</div>
-                    <div class="skill-tag floating">TypeScript</div>
-                    <div class="skill-tag floating">Tailwind CSS</div>
-                    <div class="skill-tag floating">MySQL</div>
-                    <div class="skill-tag floating">Python</div>
-                    <div class="skill-tag floating">Java</div>
-                    <div class="skill-tag floating">MongoDB</div>
-                    <div class="skill-tag floating">Git</div>
-                    <div class="skill-tag floating">GitHub</div>
-                </div>
-            </div>
+
+        <div class="tools-row">
+          <span class="tool-tag">MySQL</span>
+          <span class="tool-tag">MongoDB</span>
+          <span class="tool-tag">Java</span>
+          <span class="tool-tag">Framer Motion</span>
+          <span class="tool-tag">Vercel</span>
+          <span class="tool-tag">Vite</span>
+          <span class="tool-tag">Power Automate</span>
         </div>
-    </section>
+      </div>
+    </div>
+  </section>
 
-    <!-- Projects Section -->
-    <section id="projects" class="section projects">
-        <div class="section-header fade-in">
-            <h2 class="section-title">Featured Projects</h2>
-            <p class="section-subtitle">
-                A showcase of my recent work and creative endeavors
-            </p>
+  <section id="projects" class="projects reveal">
+    <div class="section-label" aria-hidden="true">§ WORK</div>
+    <h2 class="section-heading">Featured<br/>Projects.</h2>
+
+    <div class="projects-list">
+
+      <article class="project-card reveal">
+        <div class="project-index" aria-hidden="true">01</div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3 class="project-name">Quest</h3>
+            <div class="project-tags">
+              <span class="ptag">Next.js 16</span>
+              <span class="ptag">React 19</span>
+              <span class="ptag">Supabase</span>
+              <span class="ptag">Firebase Admin</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            Gamified employee engagement platform with role-based dashboards,
+            real-time task approval workflows, and interactive leaderboards.
+            Users earn points for completing quests — instant feedback,
+            automated notifications, transparent productivity.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/VedantCore/quest-app" class="project-link" target="_blank" rel="noopener">↗ GitHub</a>
+            <a href="https://quest-app-test.vercel.app/" class="project-link project-link--live" target="_blank" rel="noopener">↗ Live</a>
+          </div>
         </div>
-        <div class="projects-grid">
-            <div class="project-card fade-in">
-                <div class="project-header">
-                    <div class="project-icon">Q</div>
-                    <h3 class="project-title">Quest</h3>
-                </div>
-                <p class="project-description">
-                    Quest App is a gamified employee engagement platform designed to boost productivity.
-                    It features role-based dashboards, real-time task approval workflows, and interactive leaderboards.
-                    Users earn points for completing quests, fostering a transparent and motivating work environment through instant feedback and automated notifications.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">Next.js 16</span>
-                    <span class="tech-tag">REACT 19</span>
-                    <span class="tech-tag">Supabase</span>
-                    <span class="tech-tag">Firebase Admin</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/VedantCore/quest-app" class="project-link">GitHub</a>
-                    <a href="https://quest-app-test.vercel.app/" class="project-link">Live Demo</a>
-                </div>
-            </div>
+      </article>
 
-            <div class="project-card fade-in">
-                <div class="project-header">
-                    <div class="project-icon">LUM</div>
-                    <h3 class="project-title">Lumina</h3>
-                </div>
-                <p class="project-description">
-                    A production-ready SaaS landing page featuring AI-powered knowledge management.
-                    Showcases premium dark-mode design with glassmorphism effects, smooth scroll animations, interactive demos, and infinite testimonial carousels.
-                    Fully responsive with mobile-first approach and optimized performance.  
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">Next.js 16</span>
-                    <span class="tech-tag">REACT 19</span>
-                    <span class="tech-tag">Framer Motion</span>
-                    <span class="tech-tag">TailwindCSS</span>
-                    <span class="tech-tag">Lucide Icons</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/VedantCore/Lumina" class="project-link">GitHub</a>
-                    <a href="" class="project-link">Live Demo</a>
-                </div>
+      <article class="project-card reveal">
+        <div class="project-index" aria-hidden="true">02</div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3 class="project-name">Lumina</h3>
+            <div class="project-tags">
+              <span class="ptag">Next.js 16</span>
+              <span class="ptag">React 19</span>
+              <span class="ptag">Framer Motion</span>
+              <span class="ptag">TailwindCSS</span>
             </div>
-
-            <div class="project-card fade-in">
-                <div class="project-header">
-                    <div class="project-icon">WSP</div>
-                    <h3 class="project-title">WeatherSphere Forecast</h3>
-                </div>
-                <p class="project-description">
-                    WeatherSphere is a full-stack dashboard transforming raw meteorological data into an immersive experience.
-                    Featuring a cinematic 3D digital globe and smart autocomplete search, it delivers hyper-local, real-time forecasts for any city on Earth.
-                    The responsive interface visualizes deep weather metrics through a dynamic, professional UI.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">HTML</span>
-                    <span class="tech-tag">CSS</span>
-                    <span class="tech-tag">JavaScript</span>
-                    <span class="tech-tag">Vercel</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/VedantCore/WeatherSphere" class="project-link">GitHub</a>
-                    <a href="https://weather-sphere-azure.vercel.app/" class="project-link">Live Demo</a>
-                </div>
-            </div>
-
-            <div class="project-card fade-in">
-                <div class="project-header">
-                    <div class="project-icon">P</div>
-                    <h3 class="project-title">Creative Web Portfolio</h3>
-                </div>
-                <p class="project-description">
-                    I engineered a visually immersive portfolio for a professional video editor, designed to showcase creative work with cinematic flair.
-                    Built for high performance, the site features fluid entrance animations powered by Framer Motion and a responsive, modern 'Bento' layout styled with Tailwind CSS to ensure a seamless experience across all devices.
-                </p>
-                <div class="project-tech">
-                    <span class="tech-tag">Next.js</span>
-                    <span class="tech-tag">TypeScript</span>
-                    <span class="tech-tag">Framer Motion</span>
-                    <span class="tech-tag">Tailwind CSS</span>
-                </div>
-                <div class="project-links">
-                    <a href="https://github.com/VedantCore/maddy-portfolio" class="project-link">GitHub</a>
-                    <a href="https://maddyfps17-portfolio.vercel.app/" class="project-link">Live Demo</a>
-                </div>
-            </div>
+          </div>
+          <p class="project-desc">
+            Production-ready SaaS landing page for AI-powered knowledge
+            management. Premium dark-mode design with glassmorphism, smooth
+            scroll animations, interactive demos, and infinite testimonial
+            carousels. Mobile-first, performance-optimised.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/VedantCore/Lumina" class="project-link" target="_blank" rel="noopener">↗ GitHub</a>
+            <a href="#" class="project-link" aria-disabled="true">↗ Live (soon)</a>
+          </div>
         </div>
-    </section>
+      </article>
 
-    <!-- Contact Section -->
-    <section id="contact" class="section contact">
-        <div class="section-header fade-in">
-            <h2 class="section-title">Let's Connect</h2>
-            <p class="section-subtitle">
-                Ready to collaborate or discuss exciting opportunities
-            </p>
-        </div>
-        <div class="contact-content fade-in">
-            <p class="contact-text">
-                I'm always open to discussing new opportunities, interesting projects, 
-                or just having a conversation about technology and development. 
-                Let's build something amazing together!
-            </p>
-            <a href="mailto:work.vedantcore@gmail.com" class="btn btn-primary">Get In Touch</a>
-            <div class="social-links">
-                <a href="https://github.com/VedantCore" class="social-link">
-                    <span>GitHub</span>
-                </a>
-                <a href="https://www.linkedin.com/in/vedantcore" class="social-link">
-                    <span>LinkedIn</span>
-                </a>
+      <article class="project-card reveal">
+        <div class="project-index" aria-hidden="true">03</div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3 class="project-name">Cipher</h3>
+            <div class="project-tags">
+              <span class="ptag">React 19</span>
+              <span class="ptag">Node.js 22 LTS</span>
+              <span class="ptag">PostgreSQL 16</span>
+              <span class="ptag">Socket.io / Redis 7</span>
+              <span class="ptag">Libsodium / X25519 / XSalsa20-Poly1305 for secure cryptographic key-message encryption</span>
             </div>
+          </div>
+          <p class="project-desc">
+            Cipher is a privacy-first, end-to-end encrypted messaging platform built on a zero-knowledge server architecture, ensuring the server only stores ciphertext and never has access to the plaintext messages.
+            It is a secure and private messaging app that allows you to send and receive messages from your friends and family without worrying about your data being compromised.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/VedantCore/Cipher" class="project-link" target="_blank" rel="noopener">↗ GitHub</a>
+            <a href="#" class="project-link" aria-disabled="true">↗ Live (soon)</a>
+          </div>
         </div>
-    </section>
+      </article>
 
-    <!-- Footer -->
-    <footer class="footer">
-        <p>&copy; 2025 Vedant Sarva. Crafted with passion and modern web technologies.</p>
-    </footer>
+      <article class="project-card reveal">
+        <div class="project-index" aria-hidden="true">04</div>
+        <div class="project-body">
+          <div class="project-top">
+            <h3 class="project-name">CloudNotes</h3>
+            <div class="project-tags">
+              <span class="ptag">React / TypeScript + Vite</span>
+              <span class="ptag">Node.js / Express</span>
+              <span class="ptag">MongoDB / PostgreSQL</span>
+              <span class="ptag">AWS S3 / Cloudflare R2</span>
+            </div>
+          </div>
+          <p class="project-desc">
+            CloudNotes is a scalable, cloud-based note-taking application designed to allow users to create, edit, organize, and securely store notes that are accessible from any device, anywhere. 
+            By leveraging cloud infrastructure, it ensures high availability, automatic synchronization, and data redundancy.
+          </p>
+          <div class="project-links">
+            <a href="https://github.com/VedantCore/cloudnotes" class="project-link" target="_blank" rel="noopener">↗ GitHub</a>
+            <a href="#" class="project-link" aria-disabled="true">↗ Live (soon)</a>
+          </div>
+        </div>
+      </article>
 
-    <script src="script.js"></script>
+    </div></section>
+
+  <section id="contact" class="contact reveal">
+    <div class="section-label" aria-hidden="true">§ CONTACT</div>
+
+    <div class="contact-inner">
+      <h2 class="contact-heading">Let's<br/>build<br/>something.</h2>
+
+      <div class="contact-right">
+        <p class="contact-body">
+          Open to internships, collabs, and full-time roles in
+          DevOps / DevSecOps / Full-Stack. Let's talk.
+        </p>
+
+        <a href="mailto:work.vedantcore@gmail.com" class="contact-email">
+          work.vedantcore@gmail.com
+        </a>
+
+        <div class="contact-socials">
+          <a href="https://github.com/VedantCore"         class="social-btn" target="_blank" rel="noopener">GitHub ↗</a>
+          <a href="https://www.linkedin.com/in/vedantcore" class="social-btn" target="_blank" rel="noopener">LinkedIn ↗</a>
+          <a href="VedantSarva-Resume2026.pdf" class="social-btn" target="_blank" rel="noopener">Resume ↗</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="site-footer">
+    <span>© 2026 Vedant Sarva</span>
+    <span class="footer-sep">/</span>
+    <span>MIT-ADT University, Pune</span>
+    <span class="footer-sep">/</span>
+    <span class="footer-made">Built with Modern Technologies &amp; Frameworks</span>
+  </footer>
+
+  <script src="script.js"></script>
 </body>
 </html>
